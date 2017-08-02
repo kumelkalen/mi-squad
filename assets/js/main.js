@@ -14,5 +14,9 @@ function MiembroSquad (nombre,edad){
 			item.appendChild(hobbie);
 			lista.appendChild(item);
 			div.appendChild(lista);
-		}
+	}
+	var nombre = document.createTextNode("Nombre: "+this.nombre);
+	var pNombre = document.createElement('p');
+	pNombre.appendChild(nombre);
+	div.appendChild(pNombre);
 }
