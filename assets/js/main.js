@@ -24,3 +24,16 @@ function MiembroSquad (nombre,edad){
 	pEdad.appendChild(edad);
 	div.appendChild(pEdad);
 }
+
+var maca = new MiembroSquad ("Macarena Baltra","27");
+	maca.hobbies("Encuadernar","Dibujar","Reir");
+var clau = new MiembroSquad("Claudia Rivera","33");
+	clau.hobbies("Patinar","Comer dulces","Ser tierna");
+var bere = new MiembroSquad("Bere Rios","28");
+	bere.hobbies("Ser vegana","Yoga","Bailar");
+var susana = new MiembroSquad("Susana Arce","28");
+	susana.hobbies("Golpear","Emprender","Bailar");
+var ratita = new MiembroSquad("Chinchilla Psico","24");
+	ratita.hobbies("Dibujar","Leer","Ser Darks");
+var dani = new MiembroSquad("Daniela Medina","20");
+	dani.hobbies("Dibujar","Comer","Bailar");
