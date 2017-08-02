@@ -19,4 +19,8 @@ function MiembroSquad (nombre,edad){
 	var pNombre = document.createElement('p');
 	pNombre.appendChild(nombre);
 	div.appendChild(pNombre);
+	var edad = document.createTextNode("Edad: "+this.edad);
+	var pEdad = document.createElement('p');
+	pEdad.appendChild(edad);
+	div.appendChild(pEdad);
 }
