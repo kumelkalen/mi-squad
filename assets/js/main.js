@@ -6,6 +6,7 @@ div.appendChild(titulo);
 function MiembroSquad (nombre,edad){
 	this.nombre = nombre;
 	this.edad = edad ;
+	var lista = document.createElement('ul');
 	this.hobbies = function(a,b,c){
 		var hobbies = [a,b,c];
 		for(i=0;i<hobbies.length;i++){
@@ -14,6 +15,7 @@ function MiembroSquad (nombre,edad){
 			item.appendChild(hobbie);
 			lista.appendChild(item);
 			div.appendChild(lista);
+		}
 	}
 	var nombre = document.createTextNode("Nombre: "+this.nombre);
 	var pNombre = document.createElement('p');
