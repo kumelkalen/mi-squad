@@ -3,6 +3,7 @@ var titulo = document.createElement("h1");
 var squadName = document.createTextNode("Squad 6");
 titulo.appendChild(squadName);
 div.appendChild(titulo);
+
 function MiembroSquad (nombre,edad){
 	this.nombre = nombre;
 	this.edad = edad ;
@@ -17,6 +18,9 @@ function MiembroSquad (nombre,edad){
 			div.appendChild(lista);
 		}
 	}
+	var img = document.createElement("img");
+	img.setAttribute("src","assets/imagenes/"+this.imagen);
+	div.appendChild(img);
 	var nombre = document.createTextNode("Nombre: "+this.nombre);
 	var pNombre = document.createElement('p');
 	pNombre.appendChild(nombre);
@@ -26,6 +30,8 @@ function MiembroSquad (nombre,edad){
 	pEdad.appendChild(edad);
 	div.appendChild(pEdad);
 }
+
+
 
 var maca = new MiembroSquad ("Macarena Baltra","27");
 	maca.hobbies("Encuadernar","Dibujar","Reir");
@@ -39,3 +45,8 @@ var ratita = new MiembroSquad("Chinchilla Psico","24");
 	ratita.hobbies("Dibujar","Leer","Ser Darks");
 var dani = new MiembroSquad("Daniela Medina","20");
 	dani.hobbies("Dibujar","Comer","Bailar");
+
+var chicas = [maca,clau,bere,susana,ratita,dani];
+for(i=0;i<chicas.length;i++){
+	chicas[i].imagen=i.png;
+}
